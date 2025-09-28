@@ -10,23 +10,44 @@
     <header>
       <nav class="navbar-wrapper">
         <ul class="links-wrapper">
-          <li id="home-icon" class="nav-link"><a href="#home">Home</a></li>
-          <li id="about-icon" class="nav-link"><a href="#about">About</a></li>
+          <li id="home-icon" class="nav-link">
+            <a href="#home" data-i18n="navHome">Home</a>
+          </li>
+          <li id="about-icon" class="nav-link">
+            <a href="#about" data-i18n="navAbout">About</a>
+          </li>
           <li id="projects-icon" class="nav-link">
-            <a href="#projects">Projects</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
           </li>
           <li id="contact-icon" class="nav-link">
-            <a href="#contact">Contact</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
           </li>
-          <li class="hide">
-            <select name="" id="">
-              <option value="it">IT</option>
-              <option value="en">EN</option>
-            </select>
-          </li>
+          <li class="nav-link"><a id="lang-toggle">IT</a></li>
         </ul>
       </nav>
     </header>
+    <nav class="mobile-navbar-wrapper">
+      <ul class="mobile-links-wrapper">
+        <li id="mobile-home-icon" class="mobile-nav-link">
+          <a href="#home" data-i18n="navHome">Home</a>
+        </li>
+        <li id="mobile-about-icon" class="mobile-nav-link">
+          <a href="#about" data-i18n="navAbout">About</a>
+        </li>
+        <li id="mobile-projects-icon" class="mobile-nav-link">
+          <a href="#projects" data-i18n="navProjects">Projects</a>
+        </li>
+        <li id="mobile-contact-icon" class="mobile-nav-link">
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </li>
+        <li class="mobile-nav-link"><a id="mob-lang-toggle">IT</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
 
     <div class="bg-decoration-white"></div>
     <div class="bg-decoration-accent"></div>
@@ -35,13 +56,13 @@
       <section id="home" class="section">
         <div class="hero-section-wrapper">
           <div class="top-div">
-            <h1>Adrian Paval</h1>
-            <h2>Full stack developer</h2>
+            <h1 data-i18n="heroHeadline">Adrian Paval</h1>
+            <h2 data-i18n="heroSubheadline">Full stack developer</h2>
             <img src="/assets/Image Profile.png" alt="" />
           </div>
           <div class="hero-content">
             <div class="left-div">
-              <p>
+              <p data-i18n="heroParagraph1">
                 I’m a self-taught Full Stack Developer who loves turning ideas
                 into fast, functional, and visually engaging websites. I
                 specialize in building modern, responsive web apps using tools
@@ -68,13 +89,17 @@
               </div>
             </div>
             <div class="right-div">
-              <p>
+              <p data-i18n="heroParagraph2">
                 Whether you're launching a new product, improving an existing
                 site, or starting from scratch, I can help bring your vision to
                 life with clean code and solid UX. Let’s build something great
                 together.
               </p>
-              <a href="#contact"><button class="button">Let's Talk</button></a>
+              <a href="#contact"
+                ><button data-i18n="heroButton" class="button">
+                  Let's Talk
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -82,23 +107,23 @@
 
       <section id="about" class="section section__about">
         <div class="section__about--left">
-          <h2>Full Stack Developer</h2>
+          <h2 data-i18n="aboutHeadline">Full Stack Developer</h2>
           <!-- <img src="/assets/Image Profile.png" alt="" /> -->
 
-          <p>
+          <p data-i18n="aboutParagraph1">
             I'm a self-taught Full Stack Developer with a passion for building
             clean, efficient, and user-focused web experiences. What started as
             a curiosity quickly turned into a career—fueled by countless hours
             of hands-on learning, real-world problem-solving, and a genuine love
             for coding.
           </p>
-          <p>
+          <p data-i18n="aboutParagraph2">
             I specialize in both frontend and backend development using HTML,
             CSS, JavaScript, React and Node.js. From responsive landing pages to
             full-featured web applications, I enjoy bringing ideas to life with
             code.
           </p>
-          <p>
+          <p data-i18n="aboutParagraph3">
             As a self-taught developer, I’ve learned to be resourceful,
             adaptable, and focused on results. I don’t just build to make things
             work—I build to solve real problems and create smooth, scalable
@@ -112,7 +137,7 @@
 
       <section class="section">
         <div class="expertise__icons--wrapper">
-          <h3>My main tech stack:</h3>
+          <h3 data-i18n="aboutSubheadline">My main tech stack:</h3>
           <div class="section__about--dev-icons">
             <img src="/assets/css-icon.png" alt="" />
             <img src="/assets/javascript-icon.png" alt="" />
@@ -126,11 +151,11 @@
       <section id="expertise" class="section section__expertise">
         <div class="expertise-info">
           <div>
-            <h2>
+            <h2 data-i18n="expertiseHeadline">
               Tools I Use to Build Fast, Scalable, and Impactful Web Experiences
             </h2>
           </div>
-          <p>
+          <p data-i18n="expertiseSubheadline">
             I build across the frontend and backend, focusing on clean code,
             performance, and scalability. From responsive UIs to powerful APIs,
             I use the right tools to deliver solid results.
@@ -140,8 +165,8 @@
           <div class="card">
             <img src="/assets/css-icon.png" alt="" />
             <div>
-              <h3>HTML</h3>
-              <p>
+              <h3 data-i18n="cardTitle1">HTML</h3>
+              <p data-i18n="cardParagraph1">
                 is the foundation of every webpage I build. I use it to create
                 clean, semantic structure that ensures accessibility, SEO
                 readiness, and solid front-end performance.
@@ -151,8 +176,8 @@
           <div class="card">
             <img src="/assets/html-icon.png" alt="" />
             <div>
-              <h3>CSS</h3>
-              <p>
+              <h3 data-i18n="cardTitle2">CSS</h3>
+              <p data-i18n="cardParagraph2">
                 brings my designs to life. I use it to craft responsive layouts,
                 smooth animations, and visually consistent interfaces across all
                 screen sizes.
@@ -162,8 +187,8 @@
           <div class="card">
             <img src="/assets/javascript-icon.png" alt="" />
             <div>
-              <h3>JavaScript</h3>
-              <p>
+              <h3 data-i18n="cardTitle3">JavaScript</h3>
+              <p data-i18n="cardParagraph3">
                 adds interactivity and dynamic behavior to my projects. I use it
                 to build responsive interfaces, handle logic, and bring web
                 applications to life on the client side.
@@ -173,8 +198,8 @@
           <div class="card">
             <img src="/assets/nodejs-icon.png" alt="" />
             <div>
-              <h3>React</h3>
-              <p>
+              <h3 data-i18n="cardTitle4">React</h3>
+              <p data-i18n="cardParagraph4">
                 helps me build fast, dynamic user interfaces with reusable
                 components. I use it to create scalable frontend applications
                 with smooth user experiences and efficient state management.
@@ -184,8 +209,8 @@
           <div class="card">
             <img src="/assets/react-icon.png" alt="" />
             <div>
-              <h3>Node.js</h3>
-              <p>
+              <h3 data-i18n="cardTitle5">Node.js</h3>
+              <p data-i18n="cardParagraph5">
                 lets me build fast, scalable backend services using JavaScript.
                 I use it to create RESTful APIs, handle server-side logic, and
                 power full-stack applications with ease.
@@ -195,8 +220,8 @@
           <div class="card">
             <img src="/assets/css-icon.png" alt="" />
             <div>
-              <h3>Python</h3>
-              <p>
+              <h3 data-i18n="cardTitle6">Python</h3>
+              <p data-i18n="cardParagraph6">
                 is my go-to language for writing clean, readable code. I use it
                 for scripting, data manipulation, and backend development,
                 thanks to its versatility and strong community support.
@@ -206,34 +231,24 @@
           <div class="card">
             <img src="/assets/html-icon.png" alt="" />
             <div>
-              <h3>Bootstrap</h3>
-              <p>
+              <h3 data-i18n="cardTitle7">Bootstrap</h3>
+              <p data-i18n="cardParagraph7">
                 helps me build responsive, mobile-first interfaces quickly. I
                 use it to streamline layout design and ensure consistent styling
                 with minimal custom CSS.
               </p>
             </div>
           </div>
-          <!-- <div class="card">
-            <img src="/assets/javascript-icon.png" alt="" />
-            <div>
-              <h3>Numquam, aut.</h3>
-              <p>
-                Pariatur animi corrupti vel blanditiis officia eaque officiis
-                sunt eligendi? Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-          </div> -->
         </div>
       </section>
 
       <section id="projects" class="section section__projects">
         <div class="projects-wrapper">
           <div class="projects-header">
-            <h1>My Dev Projects</h1>
+            <h1 data-i18n="projectsHeadline">My Dev Projects</h1>
             <div class="project-header__content">
               <div class="project-header__content--left">
-                <p>
+                <p data-i18n="projectsParagraph">
                   Here are some of the projects I’ve built to solve real-world
                   problems and sharpen my full stack skills. Each one reflects
                   my focus on clean code, responsive design, and user
@@ -259,8 +274,8 @@
                   <img class="hide" src="/assets/react-icon.png" alt="" />
                 </div>
                 <div class="project__content">
-                  <h2>Kanban Board</h2>
-                  <p>
+                  <h2 data-i18n="projectCardHeadline1">Kanban Board</h2>
+                  <p data-i18n="projectCardParagraph1">
                     A Kanban board built in JavaScript that will allow us to
                     drag tasks based on if they are started, in progress or
                     finished.
@@ -280,8 +295,8 @@
                   <img class="hide" src="/assets/react-icon.png" alt="" />
                 </div>
                 <div class="project__content">
-                  <h2>Pomodoro Timer</h2>
-                  <p>
+                  <h2 data-i18n="projectCardHeadline2">Pomodoro Timer</h2>
+                  <p data-i18n="projectCardParagraph2">
                     A classic Pomodoro Timer built in JavaScript that will let
                     us start/pause add and delete tasks.
                   </p>
@@ -300,8 +315,8 @@
                   <img class="hide" src="/assets/react-icon.png" alt="" />
                 </div>
                 <div class="project__content">
-                  <h2>Credit Card Form</h2>
-                  <p>
+                  <h2 data-i18n="projectCardHeadline3">Credit Card Form</h2>
+                  <p data-i18n="projectCardParagraph3">
                     A Credit Card from built in react that will update a mockup
                     card based on the inputs we feed.
                   </p>
@@ -320,8 +335,8 @@
                   <img src="/assets/react-icon.png" alt="" />
                 </div>
                 <div class="project__content">
-                  <h2>Weather App</h2>
-                  <p>
+                  <h2 data-i18n="projectCardHeadline4">Weather App</h2>
+                  <p data-i18n="projectCardParagraph4">
                     A weather widget using RESTful API that will get us the
                     weather for the week and allow us to convert temperature
                     units.
@@ -341,8 +356,8 @@
                   <img class="hide" src="/assets/react-icon.png" alt="" />
                 </div>
                 <div class="project__content">
-                  <h2>Authentication</h2>
-                  <p>
+                  <h2 data-i18n="projectCardHeadline5">Authentication</h2>
+                  <p data-i18n="projectCardParagraph5">
                     A signup form for us to practice our knowledge on
                     Authentication.
                   </p>
@@ -361,8 +376,8 @@
                   <img src="/assets/react-icon.png" alt="" />
                 </div>
                 <div class="project__content">
-                  <h2>Travel App</h2>
-                  <p>
+                  <h2 data-i18n="projectCardHeadline6">Travel App</h2>
+                  <p data-i18n="projectCardParagraph6">
                     A travel App that allows users to sign up, add, edit and
                     delete their own travel experiences as well as see other
                     peoples experiences.
@@ -380,18 +395,18 @@
             <img src="/assets/website-mockup-freelancydesigns.jpg" alt="" />
           </div>
           <div class="contact-wrapper-content">
-            <h2>Let’s Build Something Together</h2>
-            <p>
+            <h2 data-i18n="contactHeadline">Let’s Build Something Together</h2>
+            <p data-i18n="contactParagraph1">
               I'm always open to new opportunities — whether it’s a freelance
               project, a full-time role, or just a collaboration idea. If you
               have something in mind or just want to say hello, feel free to
               reach out!
             </p>
-            <p>
+            <p data-i18n="contactParagraph2">
               You can contact me directly at [your email address] or use the
               form below. I’ll get back to you as soon as possible.
             </p>
-            <button class="button">Let's Talk</button>
+            <button data-i18n="contactButton" class="button">Let's Talk</button>
           </div>
         </div>
       </section>
@@ -400,20 +415,20 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__top--left">
-          <h2>Let's create something meaningful</h2>
+          <h2 data-i18n="footerHeadline">Let's create something meaningful</h2>
         </div>
         <div class="footer__top--right">
-          <p>
+          <p data-i18n="footerParagraph1">
             Whether you're launching a new product, improving an existing site,
             or starting from scratch, I can help bring your vision to life with
             clean code and solid UX. Let’s build something great together.
           </p>
-          <button class="button">Let’s Talk</button>
+          <button data-i18n="footerButton" class="button">Let’s Talk</button>
         </div>
       </div>
       <div class="footer__middle">
         <div>
-          <h3>Stay Connected</h3>
+          <h3 data-i18n="footerSubheadline">Stay Connected</h3>
           <div class="footer__middle--icons">
             <img src="/assets/instagram-social-icon.png" alt="" />
             <img src="/assets/x-social-icon.png" alt="" />
@@ -431,7 +446,7 @@
       </div>
       <div class="footer__bottom">
         <div>
-          <p>
+          <p data-i18n="footerParagraph2">
             I build across the frontend and backend, focusing on clean code,
             performance, and scalability.
           </p>
